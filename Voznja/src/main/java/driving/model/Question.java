@@ -3,13 +3,8 @@ package driving.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
+import org.antlr.v4.runtime.misc.NotNull;
 
 @Entity
 public class Question {
@@ -18,22 +13,25 @@ public class Question {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column
+	@Column(nullable = false)
 	private String questionText;
 	
-	@Column
+	@Column(nullable = false)
 	private Integer points;
 	
-	@Column 
+	@Column(nullable = false)
 	private Integer numberOfAnswers;
 
-	@Column
+	@Column(nullable = false)
 	private boolean hasPicture;
+
+	@Column
+	private String picturePath;
 	
-	@OneToMany
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private List<Answer> answers = new ArrayList<>();
 	
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	private SubTopic subTopic;
 
 	
