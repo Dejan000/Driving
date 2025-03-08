@@ -3,10 +3,7 @@ package driving.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 
 @Entity
@@ -15,11 +12,11 @@ public class Test {
 	@Id
 	private Long id;
 	
-	@Column
+	@Column(nullable = false)
 	private Integer numberOfPoints;
 	
-//	@OneToMany
-//	private List<Question> testQuestions = new ArrayList<>();
+	@OneToMany(fetch = FetchType.LAZY)
+	private List<Question> testQuestions = new ArrayList<>();
 
 	public Long getId() {
 		return id;

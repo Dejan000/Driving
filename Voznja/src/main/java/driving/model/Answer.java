@@ -9,20 +9,16 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Answer {
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	
-	@Column
+
+	@Column(nullable = false)
 	private String answerText;
 	
-	@Column
+	@Column(nullable = false)
 	private Boolean correct;
-	
-	
 
 	public Long getId() {
 		return id;
