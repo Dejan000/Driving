@@ -4,11 +4,7 @@
 
 	import java.util.List;
 
-	import jakarta.persistence.Column;
-	import jakarta.persistence.Entity;
-	import jakarta.persistence.GeneratedValue;
-	import jakarta.persistence.GenerationType;
-	import jakarta.persistence.Id;
+	import jakarta.persistence.*;
 
 	@Entity
 	public class User {
@@ -23,8 +19,8 @@
 		@Column(nullable = false)
 		private String password;
 		
-	//	@Column
-	//	private List<Question> questions;
+		@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+		private List<Question> questions;
 
 		public Long getId() {
 			return id;
@@ -50,13 +46,13 @@
 			this.password = password;
 		}
 
-	//	public List<Question> getQuestions() {
-	//		return questions;
-	//	}
-	//
-	//	public void setQuestions(List<Question> questions) {
-	//		this.questions = questions;
-	//	}
+		public List<Question> getQuestions() {
+			return questions;
+		}
+
+		public void setQuestions(List<Question> questions) {
+			this.questions = questions;
+		}
 				
 	
 	

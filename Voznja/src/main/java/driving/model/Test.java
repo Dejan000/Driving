@@ -18,6 +18,9 @@ public class Test {
 	@OneToMany(fetch = FetchType.LAZY)
 	private List<Question> testQuestions = new ArrayList<>();
 
+	@Column(nullable = false)
+	private Boolean testPassed;
+
 	public Long getId() {
 		return id;
 	}
@@ -34,14 +37,14 @@ public class Test {
 		this.numberOfPoints = numberOfPoints;
 	}
 
-//	public List<Question> getTestQuestions() {
-//		return testQuestions;
-//	}
-//
-//	public void setTestQuestions(List<Question> testQuestions) {
-//		this.testQuestions = testQuestions;
-//	}
-//	
+	public List<Question> getTestQuestions() {
+		return testQuestions;
+	}
+
+	public void setTestQuestions(List<Question> testQuestions) {
+		this.testQuestions = testQuestions;
+	}
+
 	
 	
 	
