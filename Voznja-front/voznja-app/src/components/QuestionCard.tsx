@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import Axios from "../apis/Axios";
 import useCheckBoxRegulator from "../services/checkBoxRegulator";
-import { checkBoxAnswer } from "../services/checkBoxRegulator";
 
 const QuestionCard = (props: any) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,11 +64,12 @@ const QuestionCard = (props: any) => {
           <h4>{props.question.questionText}</h4>
           <div>Broj poena:{props.question.points}</div>
           <div>Broj potrebnih odgovora:{props.question.numberOfAnswers}</div>
-          <button
-            onClick={() => {
-              console.log(selectedAnswers);
-            }}
-          ></button>
+          {props.question.imageUrl && (
+            <img
+              src={`http://localhost:8080/driving/images/${props.question.imageUrl}`}
+              alt="question"
+            />
+          )}
         </div>
         <ul className="list-group list-group-flush">{renderAnswers()}</ul>
       </div>

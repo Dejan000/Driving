@@ -9,6 +9,7 @@ interface Topic {
 interface SubTopic {
   id: number;
   name: string;
+  hasQuestions: boolean;
 }
 
 const TopicSubtopicCard = (props: any) => {
@@ -40,6 +41,16 @@ const TopicSubtopicCard = (props: any) => {
       });
   };
 
+  const setFirstSubTopicWithQuestions = () => {
+    for (const subTopic of subTopics) {
+      if (subTopic.hasQuestions) {
+        props.setSubTopicId(subTopic.id);
+        return;
+      }
+    }
+    props.setSubTopicId(-2);
+  };
+
   const handleSelectChange = (event: any) => {
     setTopicId(event.target.value);
     getSubTopics(event.target.value);
@@ -53,6 +64,10 @@ const TopicSubtopicCard = (props: any) => {
     getTopics();
     getSubTopics(topicId);
   }, []);
+
+  useEffect(() => {
+    setFirstSubTopicWithQuestions();
+  }, [subTopics]);
 
   const renderTopics = () => {
     return topics.map((topic: Topic) => {
@@ -86,13 +101,17 @@ const TopicSubtopicCard = (props: any) => {
         </select>
       </div>
       <div className="container">
-        <label>Kategorija:</label>
-        <select onChange={handleSubTopicChange} name="SubCategory">
+        <label>Podkategorija:</label>
+        <select
+          value={props.subTopicId}
+          onChange={handleSubTopicChange}
+          name="SubCategory"
+        >
           {renderSubTopics()}
         </select>
-      </div>
-      <div>
+        <br></br>
         <button
+          disabled={props.subTopicId === -2}
           onClick={() => {
             goToPath("/practice");
           }}
@@ -100,6 +119,11 @@ const TopicSubtopicCard = (props: any) => {
         >
           Vezba
         </button>
+        {props.subTopicId === -2 && (
+          <p style={{ color: "red" }}>
+            {props.subTopicId === -2 ? "Nema pitanja" : ""}
+          </p>
+        )}
       </div>
     </>
   );
