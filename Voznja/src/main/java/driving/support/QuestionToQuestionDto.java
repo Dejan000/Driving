@@ -12,7 +12,6 @@ import driving.model.Question;
 
 @Component
 public class QuestionToQuestionDto implements Converter<Question,QuestionDto> {
-
     @Autowired
     private AnswerToAnswerDto toAnswerDto;
 
@@ -24,6 +23,9 @@ public class QuestionToQuestionDto implements Converter<Question,QuestionDto> {
         dto.setPoints(question.getPoints());
         dto.setQuestionText(question.getQuestionText());
         dto.setAnswers(toAnswerDto.convert(question.getAnswers()));
+        if(question.hasPicture()) {
+            dto.setImageUrl("id-" + question.getId() + ".jpg");
+        }
         return dto;
     }
 

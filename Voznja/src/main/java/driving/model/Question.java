@@ -22,6 +22,8 @@ public class Question {
 	@Column(nullable = false)
 	private Integer numberOfAnswers;
 
+
+
 	@Column(nullable = false)
 	private boolean hasPicture;
 
@@ -34,9 +36,15 @@ public class Question {
 	@ManyToOne(fetch = FetchType.LAZY)
 	private SubTopic subTopic;
 
-	
-	
-	
+
+
+	public String getPicturePath() {
+		return picturePath;
+	}
+
+	public void setPicturePath(String picturePath) {
+		this.picturePath = picturePath;
+	}
 
 	public SubTopic getSubTopic() {
 		return subTopic;
@@ -53,8 +61,6 @@ public class Question {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
-	
 
 	public String getQuestionText() {
 		return questionText;
@@ -87,13 +93,14 @@ public class Question {
 	public void setNumberOfAnswers(Integer numberOfAnswers) {
 		this.numberOfAnswers = numberOfAnswers;
 	}
-	
-	
 
-	
-	
-	
-	
-	
+	public boolean hasPicture() {
+		return hasPicture;
+	}
+
+	public void setHasPicture(boolean hasPicture) {
+		this.hasPicture = hasPicture;
+	}
+
 
 }

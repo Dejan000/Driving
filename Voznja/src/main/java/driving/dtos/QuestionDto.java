@@ -14,6 +14,10 @@ public class QuestionDto {
 
     private List<AnswerDto> answers;
 
+    private String imageUrl;
+
+
+
     public List<AnswerDto> getAnswers() {
         return answers;
     }
@@ -54,5 +58,12 @@ public class QuestionDto {
         this.questionText = questionText;
     }
 
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
 
 }
