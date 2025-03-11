@@ -30,8 +30,8 @@ import org.springframework.web.cors.CorsConfiguration;
 
 public class SecurityConfiguration  {
 
- 
-    
+
+
     @Bean
     public RequestMatcher publicEndPointMatcher() {
     return new OrRequestMatcher(
@@ -43,13 +43,13 @@ public class SecurityConfiguration  {
         new AntPathRequestMatcher("/error"));
   }
 
-    
+
      @Bean
       public AuthenticationManager authenticationManager(
       AuthenticationConfiguration authenticationConfiguration) throws Exception {
       return authenticationConfiguration.getAuthenticationManager();
   }
-  
+
 
 
    @Bean
@@ -61,6 +61,7 @@ public class SecurityConfiguration  {
          .requestMatchers(publicEndPointMatcher())
                     .permitAll()
                     .anyRequest().permitAll()
+
          )
          .sessionManagement((sessionManagement) -> sessionManagement
          .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
@@ -73,8 +74,7 @@ public class SecurityConfiguration  {
             return configuration;
         }));
         System.out.println("DONE");
-        
+
         return http.build();
     }
 }
-      
