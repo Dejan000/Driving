@@ -1,15 +1,9 @@
 import { useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import QuestionCard from "./components/QuestionCard";
 import QuestionPractice from "./components/QuestionPractice";
 import TopicSubtopicCard from "./components/TopicSubTopicCard";
-import {
-  Route,
-  BrowserRouter as Router,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
 
 function App() {
   const [subTopicId, setSubTopicId] = useState(1);

@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useCheckBoxRegulator from "../services/checkBoxRegulator";
 
 const QuestionCard = (props: any) => {
-  const [isVisible, setIsVisible] = useState(false);
   const { handleCheckBoxChange, selectedAnswers } = useCheckBoxRegulator(
     props.question.numberOfAnswers
   );
@@ -57,7 +56,7 @@ const QuestionCard = (props: any) => {
         className="card"
         style={{
           width: "100%",
-          display: props.questionPage == props.index ? "block" : "none",
+          display: props.questionPage === props.index ? "block" : "none",
         }}
       >
         <div className="card-header">
