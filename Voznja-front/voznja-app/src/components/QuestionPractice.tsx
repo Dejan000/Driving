@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Axios from "../apis/Axios";
-import QuestionCard from "./QuestionCard";
 import { checkBoxAnswer } from "../services/checkBoxRegulator";
+import { Question, SubTopicId } from "../types/types";
+import QuestionCard from "./QuestionCard";
 
-const QuestionPractice = (props: any) => {
-  const [questions, setQuestions] = useState([]);
+const QuestionPractice = ({ subTopicId }: SubTopicId) => {
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [questionPage, setQuestionPage] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [showAnswers, setShowAnswers] = useState(false);
@@ -14,7 +15,7 @@ const QuestionPractice = (props: any) => {
   >(new Map());
 
   const getQuestions = () => {
-    Axios.get(`questions/subTopic${props.subTopicId}`)
+    Axios.get(`questions/subTopic${subTopicId}`)
       .then((res) => {
         setQuestions(res.data);
         setTotalQuestions(res.data.length);

@@ -1,21 +1,15 @@
 import { useEffect, useState } from "react";
 import Axios from "../apis/Axios";
 import useCustomNavigate from "../services/navigate";
+import { SubTopic, Topic, TopicSubTopicProps } from "../types/types";
 
-interface Topic {
-  id: number;
-  name: string;
-}
-interface SubTopic {
-  id: number;
-  name: string;
-  hasQuestions: boolean;
-}
-
-const TopicSubtopicCard = (props: any) => {
-  const [topics, setTopics] = useState([]);
+const TopicSubtopicCard = ({
+  setSubTopicId,
+  subTopicId,
+}: TopicSubTopicProps) => {
+  const [topics, setTopics] = useState<Topic[]>([]);
   const [topicId, setTopicId] = useState(1);
-  const [subTopics, setSubTopics] = useState([]);
+  const [subTopics, setSubTopics] = useState<SubTopic[]>([]);
   const { goToPath } = useCustomNavigate();
 
   const getTopics = () => {
@@ -44,11 +38,11 @@ const TopicSubtopicCard = (props: any) => {
   const setFirstSubTopicWithQuestions = () => {
     for (const subTopic of subTopics) {
       if (subTopic.hasQuestions) {
-        props.setSubTopicId(subTopic.id);
+        setSubTopicId(subTopic.id);
         return;
       }
     }
-    props.setSubTopicId(-2);
+    setSubTopicId(-2);
   };
 
   const handleSelectChange = (event: any) => {
@@ -57,7 +51,7 @@ const TopicSubtopicCard = (props: any) => {
   };
 
   const handleSubTopicChange = (event: any) => {
-    props.setSubTopicId(event.target.value);
+    setSubTopicId(event.target.value);
   };
 
   useEffect(() => {
@@ -70,7 +64,7 @@ const TopicSubtopicCard = (props: any) => {
   }, [subTopics]);
 
   const renderTopics = () => {
-    return topics.map((topic: Topic) => {
+    return topics.map((topic) => {
       return (
         <option value={topic.id} id={topic.name}>
           {topic.name}
@@ -103,7 +97,7 @@ const TopicSubtopicCard = (props: any) => {
       <div className="container">
         <label>Podkategorija:</label>
         <select
-          value={props.subTopicId}
+          value={subTopicId}
           onChange={handleSubTopicChange}
           name="SubCategory"
         >
@@ -111,7 +105,7 @@ const TopicSubtopicCard = (props: any) => {
         </select>
         <br></br>
         <button
-          disabled={props.subTopicId === -2}
+          disabled={subTopicId === -2}
           onClick={() => {
             goToPath("/practice");
           }}
@@ -119,9 +113,9 @@ const TopicSubtopicCard = (props: any) => {
         >
           Vezba
         </button>
-        {props.subTopicId === -2 && (
+        {subTopicId === -2 && (
           <p style={{ color: "red" }}>
-            {props.subTopicId === -2 ? "Nema pitanja" : ""}
+            {subTopicId === -2 ? "Nema pitanja" : ""}
           </p>
         )}
       </div>
