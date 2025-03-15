@@ -1,8 +1,10 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import QuestionPractice from "./components/QuestionPractice";
+import ReportPage from "./components/ReportPageComponents/ReportPage";
 import TopicSubtopicCard from "./components/TopicSubTopicCard";
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
               ></TopicSubtopicCard>
             }
           />
+          <Route path="/ReportPage" element={<ReportPage></ReportPage>} />
         </Routes>
       </Router>
     </div>

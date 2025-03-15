@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Axios from "../apis/Axios";
 import { checkBoxAnswer } from "../services/checkBoxRegulator";
+import { registerStateFunction } from "../services/ReportPageService/ReportPageService";
 import { Question, SubTopicId } from "../types/types";
 import QuestionCard from "./QuestionCard";
+import ReportPage from "./ReportPageComponents/ReportPage";
 
 const QuestionPractice = ({ subTopicId }: SubTopicId) => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -13,6 +15,8 @@ const QuestionPractice = ({ subTopicId }: SubTopicId) => {
   const [questionPage_Answers, setQuestionPage_Answer] = useState<
     Map<number, checkBoxAnswer[]>
   >(new Map());
+  const [showReportPage, setShowReportPage] = useState(false);
+  const [hideQuestionPage, setHideQuestionPage] = useState(false);
 
   const getQuestions = () => {
     Axios.get(`questions/subTopic${subTopicId}`)
@@ -53,7 +57,11 @@ const QuestionPractice = ({ subTopicId }: SubTopicId) => {
       const updatedList = currentList.filter(
         (answer2) => answer2.id !== answer.id
       );
-      updateState.set(pageNum, updatedList);
+      if (updatedList.length === 0) {
+        updateState.delete(pageNum);
+      } else {
+        updateState.set(pageNum, updatedList);
+      }
       return updateState;
     });
   };
@@ -81,6 +89,11 @@ const QuestionPractice = ({ subTopicId }: SubTopicId) => {
 
   const showAnswersFun = () => {
     setShowAnswers(true);
+  };
+
+  const goToReportPage = (currentPage: number) => {
+    setShowReportPage(true);
+    setHideQuestionPage(true);
   };
 
   const questionNumberControl = (increment: string) => {
@@ -122,14 +135,32 @@ const QuestionPractice = ({ subTopicId }: SubTopicId) => {
     });
   };
 
+  const renderReportPage = () => {
+    return (
+      <ReportPage
+        questionPage_answers={questionPage_Answers}
+        questions={questions}
+        setShowReportPage={setShowReportPage}
+        showReportPage={showReportPage}
+        setHideQuestionPages={setHideQuestionPage}
+      ></ReportPage>
+    );
+  };
+
   useEffect(() => {
     getQuestions();
+    registerStateFunction(setShowReportPage);
   }, []);
 
   return (
     <div>
-      <>{renderQuestionCards()}</>
-      <div>
+      <>{renderReportPage()}</>
+      <div
+        style={{
+          display: hideQuestionPage === false ? "block" : "none",
+        }}
+      >
+        <>{renderQuestionCards()}</>
         <button
           disabled={questionPage < 1}
           onClick={() => questionNumberControl("previous")}
@@ -147,10 +178,16 @@ const QuestionPractice = ({ subTopicId }: SubTopicId) => {
         <button onClick={() => showAnswersFun()} className="btn btn-success">
           Prikazi Odgovore
         </button>
+        <button
+          onClick={() => goToReportPage(questionPage)}
+          className="btn btn-secondary"
+        >
+          Izvestaj
+        </button>
         <h3>
           Pitanje {questionPage + 1}/{totalQuestions}
         </h3>
-        <button onClick={() => console.log(showAnswers)}>Test</button>
+        <button onClick={() => console.log(questionPage_Answers)}>Test</button>
       </div>
     </div>
   );
