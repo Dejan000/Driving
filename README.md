@@ -20,7 +20,7 @@ Styling.
 Adding the rest of the questions.
 
 
-Test implementation. (Maybe I'll add a quasi-test just for show.)
+Test implementation. (Maybe I'll add a quasi-test just for show, just because there is a lot of data to be entered and i need a couple of days for data only.)
 
 
 
