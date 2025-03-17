@@ -15,10 +15,8 @@ function App() {
   return (
     <Router>
       <div className="d-flex vh-100">
-        {/* Sidebar stays fixed on the left */}
         <Sidebar />
 
-        {/* Main content fills the remaining space */}
         <div className="flex-grow-1 p-3">
           <Routes>
             <Route
