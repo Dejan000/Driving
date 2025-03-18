@@ -1,7 +1,6 @@
 package driving.controller;
 
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import driving.dtos.QuestionDto;
-import driving.model.Question;
 import driving.service.QuestionService;
 import driving.support.QuestionToQuestionDto;
 
