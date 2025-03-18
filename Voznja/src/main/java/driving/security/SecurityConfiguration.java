@@ -1,9 +1,10 @@
 package driving.security;
 
 
-import java.util.Arrays;
 
 
+
+import driving.serviceImpl.UserDetailsImp;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,16 +13,17 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+
 import org.springframework.security.config.http.SessionCreationPolicy;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.security.web.util.matcher.OrRequestMatcher;
-import org.springframework.security.web.util.matcher.RequestMatcher;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 
-
-
+import java.util.Arrays;
 
 
 @Configuration
@@ -30,51 +32,49 @@ import org.springframework.web.cors.CorsConfiguration;
 
 public class SecurityConfiguration  {
 
+    private final UserDetailsImp userDetailsService;
 
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    @Bean
-    public RequestMatcher publicEndPointMatcher() {
-    return new OrRequestMatcher(
-        new AntPathRequestMatcher("/auth/sign-in", "POST"),
-        new AntPathRequestMatcher("/auth/sign-up", "POST"),
-        new AntPathRequestMatcher("http://localhost", "GET"),
-        new AntPathRequestMatcher("/swagger-ui/**", "GET"),
-        new AntPathRequestMatcher("/swagger-ui.html", "GET"),
-        new AntPathRequestMatcher("/error"));
-  }
-
-
-     @Bean
-      public AuthenticationManager authenticationManager(
-      AuthenticationConfiguration authenticationConfiguration) throws Exception {
-      return authenticationConfiguration.getAuthenticationManager();
-  }
-
+    public SecurityConfiguration(UserDetailsImp userDetailsService, JwtAuthenticationFilter jwtAuthenticationFilter) {
+        this.userDetailsService = userDetailsService;
+        this.jwtAuthenticationFilter = jwtAuthenticationFilter;
+    }
 
 
    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        //http.cors(corsConfigurer -> corsConfigurer.configurationSource(corsConfigurationSource));
-        http
-         .csrf(c -> c.disable())
-         .authorizeHttpRequests((authorize) -> authorize
-         .requestMatchers(publicEndPointMatcher())
-                    .permitAll()
-                    .anyRequest().permitAll()
+        return http
+                .cors(cors -> cors.configurationSource(request -> {
+                    CorsConfiguration configuration = new CorsConfiguration();
+                    configuration.applyPermitDefaultValues();
+                    configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+                    configuration.setAllowedMethods(Arrays.asList("*"));
+                    configuration.setAllowedHeaders(Arrays.asList("*"));
+                    configuration.setAllowCredentials(true);
+                    return configuration;
+                }))
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(req ->req.requestMatchers("/**")
+                        .permitAll()
+                        .anyRequest().authenticated()
+                ).userDetailsService(userDetailsService)
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                .build();
+    }
 
-         )
-         .sessionManagement((sessionManagement) -> sessionManagement
-         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-         .cors(cors -> cors.configurationSource(request -> {
-            CorsConfiguration configuration = new CorsConfiguration();
-            configuration.applyPermitDefaultValues();
-            configuration.setAllowedOrigins(Arrays.asList("*"));
-            configuration.setAllowedMethods(Arrays.asList("*"));
-            configuration.setAllowedHeaders(Arrays.asList("*"));
-            return configuration;
-        }));
-        System.out.println("DONE");
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
-        return http.build();
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+        try {
+            return configuration.getAuthenticationManager();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
