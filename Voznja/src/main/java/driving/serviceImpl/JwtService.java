@@ -17,14 +17,14 @@ public class JwtService {
     private final String SECRET_KEY = "615f2bdd55dac930d3bda22901b00f868ac732de1c21caca66fa504fd99f1786";
 
     public String generateToken(User user) {
-        String token = Jwts
+        return Jwts
                 .builder()
                 .subject(user.getUsername())
+                .claim("role", user.getRole())
                 .issuedAt(new Date(System.currentTimeMillis()))
                         .expiration(new Date(System.currentTimeMillis() + 24*60*60*1000))
                 .signWith(getSignInKey())
                 .compact();
-        return token;
     }
 
     public boolean isValid(String token, UserDetails user) {

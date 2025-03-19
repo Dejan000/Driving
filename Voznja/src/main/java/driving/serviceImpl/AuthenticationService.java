@@ -1,6 +1,7 @@
 package driving.serviceImpl;
 
 import driving.model.AuthenticationResponse;
+import driving.model.Role;
 import driving.model.User;
 import driving.repository.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,7 +27,7 @@ public class AuthenticationService {
         User user = new User();
         user.setUsername(request.getUsername());
         user.setPassword(passwordEncoder.encode(request.getPassword()));
-        user.setRole(request.getRole());
+        user.setRole(Role.USER);
 
         user = userRepository.save(user);
 
