@@ -12,8 +12,7 @@ import driving.service.SubTopicService;
 @Service
 public class SubTopicServiceImpl implements SubTopicService {
 	
-	// @Autowired
-	// private SubTopicService subTopicService;
+
 	
 	@Autowired
 	private SubTopicRepository subTopicRep;

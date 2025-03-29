@@ -9,16 +9,19 @@ import {
 } from "@coreui/react";
 
 import {
+  cilAccountLogout,
   cilCheckCircle,
   cilDoor,
   cilHome,
   cilSpeedometer,
 } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
+import { logout } from "../../services/LoginServices/Login";
 import useCustomNavigate from "../../services/navigate";
 
 export const Sidebar = () => {
   const { goToPath } = useCustomNavigate();
+  const jwt = window.localStorage["jwt"];
   return (
     <CSidebar colorScheme="dark" className="border-end ">
       <CSidebarHeader className="border-bottom">
@@ -39,23 +42,23 @@ export const Sidebar = () => {
         </CNavItem>
       </CSidebarNav>
       <CSidebarHeader className="border-top d-flex justify-content-center">
-        {/* <button className="btn btn-outline-light btn-sm d-flex align-items-center">
-          <CIcon icon={cilAccountLogout} />
-        </button> */}
-        <button
-          onClick={() => goToPath("/Login")}
-          className="btn btn-outline-light btn-sm d-flex align-items-left"
-        >
-          Login
-          <CIcon icon={cilDoor} />
-        </button>
-        <button
-          onClick={() => goToPath("/Register")}
-          className="btn btn-outline-light btn-sm d-flex align-items-right"
-        >
-          Register
-          <CIcon icon={cilDoor} />
-        </button>
+        {jwt ? (
+          <button
+            onClick={() => logout()}
+            className="btn btn-outline-light btn-sm d-flex align-items-center"
+          >
+            Logout
+            <CIcon icon={cilAccountLogout} />
+          </button>
+        ) : (
+          <button
+            onClick={() => goToPath("/Login")}
+            className="btn btn-outline-light btn-sm d-flex align-items-left"
+          >
+            Login
+            <CIcon icon={cilDoor} />
+          </button>
+        )}
       </CSidebarHeader>
     </CSidebar>
   );

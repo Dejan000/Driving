@@ -1,4 +1,13 @@
+import { useState } from "react";
+import { login } from "../../services/LoginServices/Login";
+
 const Login = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = async function (e: React.MouseEvent<HTMLButtonElement>) {
+    login({ username, password });
+  };
   return (
     <section className="vh-100 gradient-custom">
       <div className="container py-5 h-100">
@@ -17,6 +26,7 @@ const Login = () => {
                     className="form-outline form-white mb-4"
                   >
                     <input
+                      onChange={(e) => setUsername(e.target.value)}
                       type="email"
                       id="typeEmailX"
                       className="form-control form-control-lg"
@@ -31,6 +41,7 @@ const Login = () => {
                     className="form-outline form-white mb-4"
                   >
                     <input
+                      onChange={(e) => setPassword(e.target.value)}
                       type="password"
                       id="typePasswordX"
                       className="form-control form-control-lg"
@@ -51,6 +62,7 @@ const Login = () => {
                     data-mdb-ripple-init
                     className="btn btn-outline-light btn-lg px-5"
                     type="submit"
+                    onClick={(e) => handleLogin(e)}
                   >
                     Login
                   </button>

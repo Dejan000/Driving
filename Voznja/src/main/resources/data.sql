@@ -2,11 +2,6 @@ ALTER DATABASE voznja CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE question CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 
-
-
-
-
-
 -- ---------------------------------------------------------------/TOPIC---------------------------------------------------------------------------------------------------------------
 INSERT INTO topic(id,name) VALUES(1,"Osnove bezbednosti saobracaja");
 INSERT INTO topic(id,name) VALUES(2,"Vozac");

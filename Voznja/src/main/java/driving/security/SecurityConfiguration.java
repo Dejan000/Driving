@@ -55,10 +55,10 @@ public class SecurityConfiguration  {
                     return configuration;
                 }))
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(req ->req.requestMatchers("/**")
-                        .permitAll()
-                        .anyRequest().authenticated()
-                ).userDetailsService(userDetailsService)
+                .authorizeHttpRequests(req ->
+                        req.requestMatchers("/api/auth/**").permitAll()
+                                .anyRequest().authenticated())
+                .userDetailsService(userDetailsService)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
