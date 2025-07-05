@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import driving.model.Question;
-import driving.model.SubTopic;
 import driving.repository.QuestionRepository;
 import driving.service.QuestionService;
 
