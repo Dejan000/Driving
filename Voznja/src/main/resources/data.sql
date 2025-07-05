@@ -906,10 +906,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"laki četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"motocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"moped");
-INSERT INTO question_answers(answers_id,question_id) VALUES(301,75);
-INSERT INTO question_answers(answers_id,question_id) VALUES(302,75);
-INSERT INTO question_answers(answers_id,question_id) VALUES(303,75);
-INSERT INTO question_answers(answers_id,question_id) VALUES(304,75);
+INSERT INTO question_answers(answers_id,question_id) VALUES(301,76);
+INSERT INTO question_answers(answers_id,question_id) VALUES(302,76);
+INSERT INTO question_answers(answers_id,question_id) VALUES(303,76);
+INSERT INTO question_answers(answers_id,question_id) VALUES(304,76);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo sa električnim pogonom, najveće trajne nominalne snage 4 kW, najveće konstruktivne brzine 40 km/h i koje ima četiri točka i masu 300 kg, je:
 ",1,1,3);
@@ -917,10 +917,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"laki četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"motocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"moped");
-INSERT INTO question_answers(answers_id,question_id) VALUES(305,76);
-INSERT INTO question_answers(answers_id,question_id) VALUES(306,76);
-INSERT INTO question_answers(answers_id,question_id) VALUES(307,76);
-INSERT INTO question_answers(answers_id,question_id) VALUES(308,76);
+INSERT INTO question_answers(answers_id,question_id) VALUES(305,77);
+INSERT INTO question_answers(answers_id,question_id) VALUES(306,77);
+INSERT INTO question_answers(answers_id,question_id) VALUES(307,77);
+INSERT INTO question_answers(answers_id,question_id) VALUES(308,77);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo sa električnim pogonom, najveće trajne nominalne snage 4 kW, najveće konstruktivne brzine 40 km/h i koje ima četiri točka i masu 300 kg, je:
 ",1,1,3);
@@ -928,10 +928,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"laki četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"moped");
-INSERT INTO question_answers(answers_id,question_id) VALUES(309,77);
-INSERT INTO question_answers(answers_id,question_id) VALUES(310,77);
-INSERT INTO question_answers(answers_id,question_id) VALUES(311,77);
-INSERT INTO question_answers(answers_id,question_id) VALUES(312,77);
+INSERT INTO question_answers(answers_id,question_id) VALUES(309,78);
+INSERT INTO question_answers(answers_id,question_id) VALUES(310,78);
+INSERT INTO question_answers(answers_id,question_id) VALUES(311,78);
+INSERT INTO question_answers(answers_id,question_id) VALUES(312,78);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo koje ima motor sa unutrašnјim sagorevanјem sa pogonom na benzin, četiri točka, najveću efektivnu snagu 4 kW i čija je masa 400 kg, je:
 ",1,1,3);
@@ -939,10 +939,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"laki četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teretno vozilo");
-INSERT INTO question_answers(answers_id,question_id) VALUES(313,78);
-INSERT INTO question_answers(answers_id,question_id) VALUES(314,78);
-INSERT INTO question_answers(answers_id,question_id) VALUES(315,78);
-INSERT INTO question_answers(answers_id,question_id) VALUES(316,78);
+INSERT INTO question_answers(answers_id,question_id) VALUES(313,79);
+INSERT INTO question_answers(answers_id,question_id) VALUES(314,79);
+INSERT INTO question_answers(answers_id,question_id) VALUES(315,79);
+INSERT INTO question_answers(answers_id,question_id) VALUES(316,79);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo, namenјeno za prevoz tereta, sa električnim pogonom, sa četiri točka, najveće trajne nominalne snage 4 kW i čija masa iznosi 500 kg, je:
 ",1,1,3);
@@ -950,109 +950,109 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"laki četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teretno vozilo");
-INSERT INTO question_answers(answers_id,question_id) VALUES(317,79);
-INSERT INTO question_answers(answers_id,question_id) VALUES(318,79);
-INSERT INTO question_answers(answers_id,question_id) VALUES(319,79);
-INSERT INTO question_answers(answers_id,question_id) VALUES(320,79);
+INSERT INTO question_answers(answers_id,question_id) VALUES(317,80);
+INSERT INTO question_answers(answers_id,question_id) VALUES(318,80);
+INSERT INTO question_answers(answers_id,question_id) VALUES(319,80);
+INSERT INTO question_answers(answers_id,question_id) VALUES(320,80);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo koje ima motor sa unutrašnјim sagorevanјem sa pogonom na benzin, četiri točka, najveću efektivnu snagu 12 kW, čija je masa 400 kg i koje ima 5 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"laki četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(321,80);
-INSERT INTO question_answers(answers_id,question_id) VALUES(322,80);
-INSERT INTO question_answers(answers_id,question_id) VALUES(323,80);
+INSERT INTO question_answers(answers_id,question_id) VALUES(321,81);
+INSERT INTO question_answers(answers_id,question_id) VALUES(322,81);
+INSERT INTO question_answers(answers_id,question_id) VALUES(323,81);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo koje ima motor sa unutrašnјim sagorevanјem sa pogonom koji nije na benzin, četiri točka, najveću efektivnu snagu 12 kW, čija je masa 380 kg i koje ima 5 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"laki četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(324,81);
-INSERT INTO question_answers(answers_id,question_id) VALUES(325,81);
-INSERT INTO question_answers(answers_id,question_id) VALUES(326,81);
+INSERT INTO question_answers(answers_id,question_id) VALUES(324,82);
+INSERT INTO question_answers(answers_id,question_id) VALUES(325,82);
+INSERT INTO question_answers(answers_id,question_id) VALUES(326,82);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo, sa električnim pogonom, četiri točka, najveće trajne nominalne snage 10 kW, čija je masa 400 kg i koje ima 5 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"teški četvorocikl");
 INSERT INTO answer(correct,answer_text) VALUES(false,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"laki četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(327,82);
-INSERT INTO question_answers(answers_id,question_id) VALUES(328,82);
-INSERT INTO question_answers(answers_id,question_id) VALUES(329,82);
+INSERT INTO question_answers(answers_id,question_id) VALUES(327,83);
+INSERT INTO question_answers(answers_id,question_id) VALUES(328,83);
+INSERT INTO question_answers(answers_id,question_id) VALUES(329,83);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo koje ima motor sa unutrašnјim sagorevanјem sa pogonom na benzin, četiri točka, najveću efektivnu snagu 22 kW, čija je masa 500 kg i koje ima 5 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"autobus");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teški četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(330,83);
-INSERT INTO question_answers(answers_id,question_id) VALUES(331,83);
-INSERT INTO question_answers(answers_id,question_id) VALUES(332,83);
+INSERT INTO question_answers(answers_id,question_id) VALUES(330,84);
+INSERT INTO question_answers(answers_id,question_id) VALUES(331,84);
+INSERT INTO question_answers(answers_id,question_id) VALUES(332,84);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo koje ima motor sa unutrašnјim sagorevanјem sa pogonom koji nije na benzin, četiri točka, najveću efektivnu snagu 20 kW, čija je masa 500 kg i koje ima 5 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"autobus");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teški četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(333,84);
-INSERT INTO question_answers(answers_id,question_id) VALUES(334,84);
-INSERT INTO question_answers(answers_id,question_id) VALUES(335,84);
+INSERT INTO question_answers(answers_id,question_id) VALUES(333,85);
+INSERT INTO question_answers(answers_id,question_id) VALUES(334,85);
+INSERT INTO question_answers(answers_id,question_id) VALUES(335,85);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo koje ima motor sa unutrašnјim sagorevanјem sa pogonom koji nije na benzin, četiri točka, najveću efektivnu snagu 120 kW, čija je masa 2.000 kg i koje ima 8 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"autobus");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teški četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(336,85);
-INSERT INTO question_answers(answers_id,question_id) VALUES(337,85);
-INSERT INTO question_answers(answers_id,question_id) VALUES(338,85);
+INSERT INTO question_answers(answers_id,question_id) VALUES(336,86);
+INSERT INTO question_answers(answers_id,question_id) VALUES(337,86);
+INSERT INTO question_answers(answers_id,question_id) VALUES(338,86);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo, sa električnim pogonom, četiri točka, najveće trajne nominalne snage 18 kW, čija je masa 500 kg i koje ima 5 mesta za sedenјe uklјučujući i mesto za sedenјe vozača, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"putničko vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"autobus");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teški četvorocikl");
-INSERT INTO question_answers(answers_id,question_id) VALUES(339,86);
-INSERT INTO question_answers(answers_id,question_id) VALUES(340,86);
-INSERT INTO question_answers(answers_id,question_id) VALUES(341,86);
+INSERT INTO question_answers(answers_id,question_id) VALUES(339,87);
+INSERT INTO question_answers(answers_id,question_id) VALUES(340,87);
+INSERT INTO question_answers(answers_id,question_id) VALUES(341,87);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Putničko vozilo je prikazano na slici broj:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"2");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
-INSERT INTO question_answers(answers_id,question_id) VALUES(342,87);
-INSERT INTO question_answers(answers_id,question_id) VALUES(343,87);
-INSERT INTO question_answers(answers_id,question_id) VALUES(344,87);
+INSERT INTO question_answers(answers_id,question_id) VALUES(342,88);
+INSERT INTO question_answers(answers_id,question_id) VALUES(343,88);
+INSERT INTO question_answers(answers_id,question_id) VALUES(344,88);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Autobus je prikazan na slici broj:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"2");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
-INSERT INTO question_answers(answers_id,question_id) VALUES(345,88);
-INSERT INTO question_answers(answers_id,question_id) VALUES(346,88);
-INSERT INTO question_answers(answers_id,question_id) VALUES(347,88);
+INSERT INTO question_answers(answers_id,question_id) VALUES(345,89);
+INSERT INTO question_answers(answers_id,question_id) VALUES(346,89);
+INSERT INTO question_answers(answers_id,question_id) VALUES(347,89);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Trolejbus je prikazan na slici broj:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(348,89);
-INSERT INTO question_answers(answers_id,question_id) VALUES(349,89);
-INSERT INTO question_answers(answers_id,question_id) VALUES(350,89);
+INSERT INTO question_answers(answers_id,question_id) VALUES(348,90);
+INSERT INTO question_answers(answers_id,question_id) VALUES(349,90);
+INSERT INTO question_answers(answers_id,question_id) VALUES(350,90);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo, sa električnim pogonom, namenјeno za izvođenјe određenih radova, sa četiri točka, najveće trajne nominalne snage 120 kW, čija je masa 1.500 kg i najveća konstruktivna brzina kretanјa 40 km/h, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"radna mašina");
 INSERT INTO answer(correct,answer_text) VALUES(false,"motokultivator");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teretno vozilo");
-INSERT INTO question_answers(answers_id,question_id) VALUES(351,90);
-INSERT INTO question_answers(answers_id,question_id) VALUES(352,90);
-INSERT INTO question_answers(answers_id,question_id) VALUES(353,90);
+INSERT INTO question_answers(answers_id,question_id) VALUES(351,91);
+INSERT INTO question_answers(answers_id,question_id) VALUES(352,91);
+INSERT INTO question_answers(answers_id,question_id) VALUES(353,91);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Teretno vozilo je prikazano na slici broj:
 ",1,1,3);
@@ -1060,10 +1060,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"2");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
-INSERT INTO question_answers(answers_id,question_id) VALUES(354,91);
-INSERT INTO question_answers(answers_id,question_id) VALUES(355,91);
-INSERT INTO question_answers(answers_id,question_id) VALUES(356,91);
-INSERT INTO question_answers(answers_id,question_id) VALUES(357,91);
+INSERT INTO question_answers(answers_id,question_id) VALUES(354,92);
+INSERT INTO question_answers(answers_id,question_id) VALUES(355,92);
+INSERT INTO question_answers(answers_id,question_id) VALUES(356,92);
+INSERT INTO question_answers(answers_id,question_id) VALUES(357,92);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Skup vozila je prikazan na slici broj:
 ",1,1,3);
@@ -1071,10 +1071,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(358,92);
-INSERT INTO question_answers(answers_id,question_id) VALUES(359,92);
-INSERT INTO question_answers(answers_id,question_id) VALUES(360,92);
-INSERT INTO question_answers(answers_id,question_id) VALUES(361,92);
+INSERT INTO question_answers(answers_id,question_id) VALUES(358,93);
+INSERT INTO question_answers(answers_id,question_id) VALUES(359,93);
+INSERT INTO question_answers(answers_id,question_id) VALUES(360,93);
+INSERT INTO question_answers(answers_id,question_id) VALUES(361,93);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Turistički voz je prikazan na slici broj:
 ",1,1,3);
@@ -1082,28 +1082,28 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(362,93);
-INSERT INTO question_answers(answers_id,question_id) VALUES(363,93);
-INSERT INTO question_answers(answers_id,question_id) VALUES(364,93);
-INSERT INTO question_answers(answers_id,question_id) VALUES(365,93);
+INSERT INTO question_answers(answers_id,question_id) VALUES(362,94);
+INSERT INTO question_answers(answers_id,question_id) VALUES(363,94);
+INSERT INTO question_answers(answers_id,question_id) VALUES(364,94);
+INSERT INTO question_answers(answers_id,question_id) VALUES(365,94);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo namenјeno za izvođenјe određenih radova, koje ima motor sa unutrašnјim sagorevanјem sa pogonom na benzin, četiri točka, najveću efektivnu snagu 20 kW, čija je masa 580 kg i najveću konstruktivnu brzinu kretanјa 40 km/h, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"radna mašina");
 INSERT INTO answer(correct,answer_text) VALUES(false,"motokultivator");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teretno vozilo");
-INSERT INTO question_answers(answers_id,question_id) VALUES(366,94);
-INSERT INTO question_answers(answers_id,question_id) VALUES(367,94);
-INSERT INTO question_answers(answers_id,question_id) VALUES(368,94);
+INSERT INTO question_answers(answers_id,question_id) VALUES(366,95);
+INSERT INTO question_answers(answers_id,question_id) VALUES(367,95);
+INSERT INTO question_answers(answers_id,question_id) VALUES(368,95);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo namenјeno za izvođenјe određenih radova, koje ima motor sa unutrašnјim sagorevanјem sa pogonom koji nije na benzin, četiri točka, najveću efektivnu snagu 120 kW, čija je masa 1.500 kg i najveća konstruktivna brzina kretanјa 40 km/h, je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"radna mašina");
 INSERT INTO answer(correct,answer_text) VALUES(false,"motokultivator");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teretno vozilo");
-INSERT INTO question_answers(answers_id,question_id) VALUES(369,95);
-INSERT INTO question_answers(answers_id,question_id) VALUES(370,95);
-INSERT INTO question_answers(answers_id,question_id) VALUES(371,95);
+INSERT INTO question_answers(answers_id,question_id) VALUES(369,96);
+INSERT INTO question_answers(answers_id,question_id) VALUES(370,96);
+INSERT INTO question_answers(answers_id,question_id) VALUES(371,96);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Traktor je prikazan na slici broj:
 ",1,1,3);
@@ -1111,10 +1111,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(372,96);
-INSERT INTO question_answers(answers_id,question_id) VALUES(373,96);
-INSERT INTO question_answers(answers_id,question_id) VALUES(374,96);
-INSERT INTO question_answers(answers_id,question_id) VALUES(375,96);
+INSERT INTO question_answers(answers_id,question_id) VALUES(372,97);
+INSERT INTO question_answers(answers_id,question_id) VALUES(373,97);
+INSERT INTO question_answers(answers_id,question_id) VALUES(374,97);
+INSERT INTO question_answers(answers_id,question_id) VALUES(375,97);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Vozilo je priklјučno ako istovremeno ispunјava najmanјe sledeće uslove:
 ",1,2,3);
@@ -1122,10 +1122,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"namenјeno je za prevoz put
 INSERT INTO answer(correct,answer_text) VALUES(true,"po konstrukciji, uređajima, sklopovima i opremi je namenјeno i osposoblјeno da bude vučeno od drugog vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"namenјeno je za obavlјanјe polјoprivrednih, šumskih ili drugih radova, i u svrhu izvođenјa tih radova, postavlјa se na motorno vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"ima jednu osovinu i konstruisano je da vuče ili potiskuje izmenјiva oruđa za razne radove");
-INSERT INTO question_answers(answers_id,question_id) VALUES(376,97);
-INSERT INTO question_answers(answers_id,question_id) VALUES(377,97);
-INSERT INTO question_answers(answers_id,question_id) VALUES(378,97);
-INSERT INTO question_answers(answers_id,question_id) VALUES(379,97);
+INSERT INTO question_answers(answers_id,question_id) VALUES(376,98);
+INSERT INTO question_answers(answers_id,question_id) VALUES(377,98);
+INSERT INTO question_answers(answers_id,question_id) VALUES(378,98);
+INSERT INTO question_answers(answers_id,question_id) VALUES(379,98);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Motokultivator je prikazan na slici broj:
 ",1,1,3);
@@ -1133,19 +1133,19 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(380,98);
-INSERT INTO question_answers(answers_id,question_id) VALUES(381,98);
-INSERT INTO question_answers(answers_id,question_id) VALUES(382,98);
-INSERT INTO question_answers(answers_id,question_id) VALUES(383,98);
+INSERT INTO question_answers(answers_id,question_id) VALUES(380,99);
+INSERT INTO question_answers(answers_id,question_id) VALUES(381,99);
+INSERT INTO question_answers(answers_id,question_id) VALUES(382,99);
+INSERT INTO question_answers(answers_id,question_id) VALUES(383,99);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Vozilo koje je po konstrukciji, uređajima, sklopovima i opremi namenјeno i osposoblјeno da bude vučeno od drugog vozila, a služi za prevoz putnika, odnosno stvari, odnosno za obavlјanјe radova je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"priklјučno vozilo");
 INSERT INTO answer(correct,answer_text) VALUES(false,"priklјučak za izvođenјe radova");
 INSERT INTO answer(correct,answer_text) VALUES(false,"teretno vozilo");
-INSERT INTO question_answers(answers_id,question_id) VALUES(384,99);
-INSERT INTO question_answers(answers_id,question_id) VALUES(385,99);
-INSERT INTO question_answers(answers_id,question_id) VALUES(386,99);
+INSERT INTO question_answers(answers_id,question_id) VALUES(384,100);
+INSERT INTO question_answers(answers_id,question_id) VALUES(385,100);
+INSERT INTO question_answers(answers_id,question_id) VALUES(386,100);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Priklјučno vozilo je prikazano na slici broj:
 ",1,1,3);
@@ -1153,10 +1153,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(387,100);
-INSERT INTO question_answers(answers_id,question_id) VALUES(388,100);
-INSERT INTO question_answers(answers_id,question_id) VALUES(389,100);
-INSERT INTO question_answers(answers_id,question_id) VALUES(390,100);
+INSERT INTO question_answers(answers_id,question_id) VALUES(387,101);
+INSERT INTO question_answers(answers_id,question_id) VALUES(388,101);
+INSERT INTO question_answers(answers_id,question_id) VALUES(389,101);
+INSERT INTO question_answers(answers_id,question_id) VALUES(390,101);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Zaprežno vozilo je prikazano na slici broj:
 ",1,1,3);
@@ -1164,10 +1164,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(391,101);
-INSERT INTO question_answers(answers_id,question_id) VALUES(392,101);
-INSERT INTO question_answers(answers_id,question_id) VALUES(393,101);
-INSERT INTO question_answers(answers_id,question_id) VALUES(394,101);
+INSERT INTO question_answers(answers_id,question_id) VALUES(391,102);
+INSERT INTO question_answers(answers_id,question_id) VALUES(392,102);
+INSERT INTO question_answers(answers_id,question_id) VALUES(393,102);
+INSERT INTO question_answers(answers_id,question_id) VALUES(394,102);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Tramvaj je prikazan na slici broj:
 ",1,1,3);
@@ -1175,10 +1175,10 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(395,102);
-INSERT INTO question_answers(answers_id,question_id) VALUES(396,102);
-INSERT INTO question_answers(answers_id,question_id) VALUES(397,102);
-INSERT INTO question_answers(answers_id,question_id) VALUES(398,102);
+INSERT INTO question_answers(answers_id,question_id) VALUES(395,103);
+INSERT INTO question_answers(answers_id,question_id) VALUES(396,103);
+INSERT INTO question_answers(answers_id,question_id) VALUES(397,103);
+INSERT INTO question_answers(answers_id,question_id) VALUES(398,103);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(true,"Lek koji sadrži psihoaktivnu supstancu i koji se ne sme upotreblјavati pre i za vreme vožnјe, na pakovanјu ima oznaku prikazanu na slici broj:
 ",1,1,3);
@@ -1186,34 +1186,34 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"1");
 INSERT INTO answer(correct,answer_text) VALUES(false,"4");
 INSERT INTO answer(correct,answer_text) VALUES(false,"3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"2");
-INSERT INTO question_answers(answers_id,question_id) VALUES(399,103);
-INSERT INTO question_answers(answers_id,question_id) VALUES(400,103);
-INSERT INTO question_answers(answers_id,question_id) VALUES(401,103);
-INSERT INTO question_answers(answers_id,question_id) VALUES(402,103);
+INSERT INTO question_answers(answers_id,question_id) VALUES(399,104);
+INSERT INTO question_answers(answers_id,question_id) VALUES(400,104);
+INSERT INTO question_answers(answers_id,question_id) VALUES(401,104);
+INSERT INTO question_answers(answers_id,question_id) VALUES(402,104);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo, sa električnim pogonom, je teški tricikl ako istovremeno ispunјava sledeće uslove:
-",1,1,3);
+",1,3,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"nјegova najveća trajna nominalna snaga prelazi 4 kW");
 INSERT INTO answer(correct,answer_text) VALUES(true,"nјegova najveća konstruktivna brzina, bez obzira na način prenosa, prelazi 45 km/h");
 INSERT INTO answer(correct,answer_text) VALUES(true,"ima tri točka, simetrično raspoređenih u odnosu na srednјu podužnu ravan vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"radna zapremina motora prelazi 50 cm3");
 INSERT INTO answer(correct,answer_text) VALUES(false,"nјegova najveća trajna nominalna snaga ne prelazi 4 kW");
 INSERT INTO answer(correct,answer_text) VALUES(false,"ima najmanјe tri točka");
-INSERT INTO question_answers(answers_id,question_id) VALUES(403,104);
-INSERT INTO question_answers(answers_id,question_id) VALUES(404,104);
-INSERT INTO question_answers(answers_id,question_id) VALUES(405,104);
-INSERT INTO question_answers(answers_id,question_id) VALUES(406,104);
-INSERT INTO question_answers(answers_id,question_id) VALUES(407,104);
-INSERT INTO question_answers(answers_id,question_id) VALUES(408,104);
+INSERT INTO question_answers(answers_id,question_id) VALUES(403,105);
+INSERT INTO question_answers(answers_id,question_id) VALUES(404,105);
+INSERT INTO question_answers(answers_id,question_id) VALUES(405,105);
+INSERT INTO question_answers(answers_id,question_id) VALUES(406,105);
+INSERT INTO question_answers(answers_id,question_id) VALUES(407,105);
+INSERT INTO question_answers(answers_id,question_id) VALUES(408,105);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Motorno vozilo, sa električnim pogonom, je teški tricikl ako istovremeno ispunјava sledeće uslove:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"preglednost");
 INSERT INTO answer(correct,answer_text) VALUES(false,"vidlјivost");
 INSERT INTO answer(correct,answer_text) VALUES(false,"dužina vidlјivosti");
-INSERT INTO question_answers(answers_id,question_id) VALUES(409,105);
-INSERT INTO question_answers(answers_id,question_id) VALUES(410,105);
-INSERT INTO question_answers(answers_id,question_id) VALUES(411,105);
+INSERT INTO question_answers(answers_id,question_id) VALUES(409,106);
+INSERT INTO question_answers(answers_id,question_id) VALUES(410,106);
+INSERT INTO question_answers(answers_id,question_id) VALUES(411,106);
 
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Masa koju deklariše proizvođač vozila i koja podrazumeva masu neopterećenog vozila sa karoserijom (nadgradnјom), odnosno šasije sa kabinom ukoliko proizvođač ne ugrađuje karoseriju (nadgradnјu), najmanјe 90% goriva, punim rezervoarima za tehničke tečnosti, stalnim teretom (trajno ugrađeni uređaji i oprema na vozilu npr. kran, dizalica i dr), rezervnim točkom (ukoliko postoji) i pripadajućim alatom je:
@@ -1221,9 +1221,9 @@ INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_to
 INSERT INTO answer(correct,answer_text) VALUES(true,"masa praznog vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"ukupna masa vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"masa vozila");
-INSERT INTO question_answers(answers_id,question_id) VALUES(412,106);
-INSERT INTO question_answers(answers_id,question_id) VALUES(413,106);
-INSERT INTO question_answers(answers_id,question_id) VALUES(414,106);
+INSERT INTO question_answers(answers_id,question_id) VALUES(412,107);
+INSERT INTO question_answers(answers_id,question_id) VALUES(413,107);
+INSERT INTO question_answers(answers_id,question_id) VALUES(414,107);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Odbačeno vozilo:
 ",1,2,3);
@@ -1231,25 +1231,26 @@ INSERT INTO answer(correct,answer_text) VALUES(true,"je vozilo koje nije upisano
 INSERT INTO answer(correct,answer_text) VALUES(true,"je vidno zapušteno vozilo parkirano na putu");
 INSERT INTO answer(correct,answer_text) VALUES(false,"je vozilo kojem je istekla važnost registracione nalepnice, bez obzira na dužinu isteka");
 INSERT INTO answer(correct,answer_text) VALUES(false,"je vidno zapušteno vozilo i nalazi se van puta");
-INSERT INTO question_answers(answers_id,question_id) VALUES(415,107);
-INSERT INTO question_answers(answers_id,question_id) VALUES(416,107);
-INSERT INTO question_answers(answers_id,question_id) VALUES(417,107);
-INSERT INTO question_answers(answers_id,question_id) VALUES(418,107);
+INSERT INTO question_answers(answers_id,question_id) VALUES(415,108);
+INSERT INTO question_answers(answers_id,question_id) VALUES(416,108);
+INSERT INTO question_answers(answers_id,question_id) VALUES(417,108);
+INSERT INTO question_answers(answers_id,question_id) VALUES(418,108);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Razlika najveće dozvolјene mase vozila i mase vozila je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"nosivost vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"najveća dozvolјena ukupna masa vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"ukupna masa vozila");
-INSERT INTO question_answers(answers_id,question_id) VALUES(419,108);
-INSERT INTO question_answers(answers_id,question_id) VALUES(420,108);
-INSERT INTO question_answers(answers_id,question_id) VALUES(421,108);
+INSERT INTO question_answers(answers_id,question_id) VALUES(419,109);
+INSERT INTO question_answers(answers_id,question_id) VALUES(420,109);
+INSERT INTO question_answers(answers_id,question_id) VALUES(421,109);
 
 INSERT INTO question(has_picture, question_text,points,number_of_answers, sub_topic_id) VALUES(false,"Najveća dozvolјena masa vozila je:
 ",1,1,3);
 INSERT INTO answer(correct,answer_text) VALUES(true,"masa koju deklariše proizvođač vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"razlika najveće dozvolјene ukupne mase vozila i mase vozila");
 INSERT INTO answer(correct,answer_text) VALUES(false,"masa koju određuje ovlašćena organizacija nakon ispitivanјa prepravlјenog vozila");
-INSERT INTO question_answers(answers_id,question_id) VALUES(422,109);
-INSERT INTO question_answers(answers_id,question_id) VALUES(423,109);
-INSERT INTO question_answers(answers_id,question_id) VALUES(424,109);
+INSERT INTO question_answers(answers_id,question_id) VALUES(422,110);
+INSERT INTO question_answers(answers_id,question_id) VALUES(423,110);
+INSERT INTO question_answers(answers_id,question_id) VALUES(424,110);
+
